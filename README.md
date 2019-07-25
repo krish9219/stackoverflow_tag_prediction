@@ -27,6 +27,10 @@ In Multi-label Classification, multiple labels (in this problem its tags) may be
 
 A question on Stackoverflow might be about any of C, C++, JAVA, Python, Regex, R Programming, .net or none of these.
 
+### Libraries used ###
+
+![left](.Images/libraries.png) ![right](.Images/lib.png)
+
 ### Performance metric ###
 
 Using Machine Learning Algorithms can be easy to find metrics like Precision, Recall, F1 Score etc. When using DL models its bit complicate to show these metrics and requires bit more complex code too. In order to make it simple and understandable i'm considering metrics called 'Val_loss'.
@@ -53,8 +57,13 @@ Tag appears to be more time. and second come java.
 4. Convert all the characters to lower case.
 5. Use Wordnetlemmatizer to lemmatize the words.
 
+![center](./Images/preprocess.png)
+
 ### DownScaling the Data ###
 
 Due to memory constraints on my Local machine with only 8GB of Ram and I5 3rd Gen Processor without GPU, i know if i train whole data and it going to kill my process in very few secs of starting the training. Here what i belive is to get an idea about the process that happens at the backend of auto tagging. 
 
 For my poor machine sake (XD) i'm only considering top 10 more frequently occuring tags. 
+
+![center](./Images/tag_freq.png)
+
