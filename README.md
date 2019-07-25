@@ -29,7 +29,8 @@ A question on Stackoverflow might be about any of C, C++, JAVA, Python, Regex, R
 
 ### Libraries used ###
 
-![left](.Images/libraries.png) ![right](.Images/lib.png)
+![left](./Images/libraries.png)  
+![right](./Images/lib.png)
 
 ### Performance metric ###
 
@@ -67,3 +68,12 @@ For my poor machine sake (XD) i'm only considering top 10 more frequently occuri
 
 ![center](./Images/tag_freq.png)
 
+### RNN Architecture with LSTM ###
+
+![center](./Images/rnn.png)
+
+### RNN Accuracy with only few Tags ###
+
+![center](./Images/acc.png)
+
+Most Challenging part is Memory limitations. We can achieve better results if we have better computational power. Machine Learning algorithms like Random Forest and OnevsRest can give faster results with noticable accuracies than RNN with LSTM. But, Rf and other algos find the distance between two words where as we can get more meaning of text when using Deep Learning Models.
