@@ -9,12 +9,15 @@ Predict the tags ( keywords, topics etc.), given only the question text and its 
 
 ### Data ###
 
-Data contains 8 fields in which we consider mainly 4 as believing these to be more valid to get better results
+Data contains 8 fields in which we consider mainly 4 as believing these to be more valid to get better results.
 
-Id - Unique identifier for each question
-Title - The question’s title
-Body - The body of the question
-Tags - The tags associated with the question
+Id - Unique identifier for each question.
+
+Title - The question’s title.
+
+Body - The body of the question.
+
+Tags - The tags associated with the question.
 
 ### Type of Machine Learning Problem ###
 
@@ -32,5 +35,26 @@ Using Machine Learning Algorithms can be easy to find metrics like Precision, Re
 
 1. Maximum number of tags per question: 5
 2. Minimum number of tags per question: 1
-3. Questions with 3 tags appeared more in number.
+3. Questions with 2 tags appeared more in number.
 
+![center](./Images/tags_per_question.png)
+
+### Wordcloud of Tags ###
+
+Tag appears to be more time. and second come java.
+
+![center](./Images/word_cloud.png)
+
+### Cleaning and Preprocessing Text data ###
+
+1. Remove Spcial characters from title and Body.
+2. Remove stop words.
+3. Remove HTML Tags
+4. Convert all the characters to lower case.
+5. Use Wordnetlemmatizer to lemmatize the words.
+
+### DownScaling the Data ###
+
+Due to memory constraints on my Local machine with only 8GB of Ram and I5 3rd Gen Processor without GPU, i know if i train whole data and it going to kill my process in very few secs of starting the training. Here what i belive is to get an idea about the process that happens at the backend of auto tagging. 
+
+For my poor machine sake (XD) i'm only considering top 10 more frequently occuring tags. 
